@@ -5,7 +5,7 @@ name: Sync Garmin Global to Garmin CN
 #   schedule:
 #     #  每6小时检查一次
 #     - cron: "0 */6 * * *"
-
+on: workflow_dispatch
 env:
   # please change to your own config.
   RQ_COOKIE: ${{ secrets.RQ_COOKIE }}
